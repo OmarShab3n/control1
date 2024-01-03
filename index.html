@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crd.css">
+ 
+    <title>CRD</title>
+</head>
+<body>
+    <div class="RD ">
+       <div class="head">
+           <h2>رصد نهائي الكنـترول</h2>
+           <P>Control management system</P>
+       </div>
+
+       <div class="input">
+           <input placeholder="الصف الدراسي " type="text" id="title">
+           <div class="price">
+               <input onkeyup="gettotal()"  type="number" id="price" placeholder="الصحيحه الأوراق ">
+               <input onkeyup="gettotal()"  type="number" id="taxes" placeholder="الأوراق بها ملاحظات">
+               <input onkeyup="gettotal()"  type="text" id="extra_costs" placeholder=" الملاحظات ">
+               <!--<input onkeyup="gettotal()"  type="number" id="discount" placeholder="خـصـم">-->
+               <small id="total"> </small>
+           </div>
+          <!-- <input placeholder="الكمية" type="number" id="count">-->
+           <input placeholder="تعليق" type="text" id="category">
+           <button id="submit">Create</button>
+       </div>
+
+       <div class="output">
+<div class="search">
+    <input type="text" id"search" placeholder="search">
+    <div class="btnSearch">
+        <button id="searchTitele">search By Title</button>
+        <button id="searchCategory">search By Category</button>
+
+    </div>
+
+
+
+
+</div>
+<div id="deleteAll"></div>
+<table>
+    <tr>
+        <th>id</th>
+        <th>الصف الدراسي</th>
+        <th>الأوراق الصحيحه</th>
+        <th>الأوراق غير الصحيحه</th>
+        <th>الملاحظات</th>
+        <th>معلومات اخري</th>
+        <th>مجمل الأوراق </th>
+        <th>تعليق</th>
+        <th>UPdate</th>
+        <th>Delete</th>
+  
+        <tbody id="tbody">
+            
+        </tbody>
+    
+</table>
+       </div>
+
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
